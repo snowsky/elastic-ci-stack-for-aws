@@ -3,7 +3,7 @@
 set -eu -o pipefail
 
 sudo yum update -y -q
-sudo yum install -y -q docker-1.11.2
+sudo yum install -y -q docker-1.12.1
 sudo usermod -a -G docker ec2-user
 
 # Change storage driver from devicemapper to overlay
